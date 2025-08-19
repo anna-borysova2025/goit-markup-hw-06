@@ -48,12 +48,32 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">Close</button>
+          <nav class="mobile-menu-nav">Navigation</nav>
+          <address>Address</address>
+          <div>
+            <ul>
+              <li>instagram</li>
+              <li>twitter</li>
+              <li>facebook</li>
+              <li>linkedin</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <!--main content-->
     <main>
-      <section class="section-solutions">
+      <section class="section-solutions hidden">
         <div class="container">
           <h1 class="head-section-solutions">
             Effective Solutions for Your Business
@@ -65,7 +85,7 @@
       </section>
 
       <!--section with list of benefits-->
-      <section class="head-section-benefits">
+      <section class="head-section-benefits hidden">
         <div class="container">
           <h2 class="visually-hidden">Our Benefits</h2>
           <ul class="benefits-list">
@@ -122,7 +142,7 @@
       </section>
 
       <!--section team-->
-      <section class="section-team">
+      <section class="section-team hidden">
         <div class="container">
           <h2 class="head-section-team">Our Team</h2>
           <ul class="list-section-team">
@@ -299,7 +319,7 @@
       </section>
 
       <!--Portfolio section-->
-      <section class="section-portfolio">
+      <section class="section-portfolio hidden">
         <div class="container">
           <h2 class="portfolio-main-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -427,7 +447,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container container-footer-all">
         <div class="container-footer-logo">
           <a href="./index.html" class="logo-footer-logo"
@@ -492,7 +512,7 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop hidden">
       <div class="modal">
         <button class="close-modal-btn" type="button">
           <svg class="icon-close" width="8" height="8">
