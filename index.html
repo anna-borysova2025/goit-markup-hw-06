@@ -48,24 +48,85 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu is-open">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close">Close</button>
-          <nav class="mobile-menu-nav">Navigation</nav>
-          <address>Address</address>
-          <div>
-            <ul>
-              <li>instagram</li>
-              <li>twitter</li>
-              <li>facebook</li>
-              <li>linkedin</li>
+          <button class="mobile-menu-close" type="button" data-menu-close>
+            <svg class="icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="">Portfolio</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="">Contacts</a>
+              </li>
             </ul>
+          </nav>
+          <div class="wrapper">
+            <address class="mobile-menu-address">
+              <ul class="mobile-menu-contacts-list">
+                <li class="mobile-menu-contacts-item">
+                  <a
+                    class="mobile-menu-contacts-link active"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-menu-contacts-item">
+                  <a
+                    class="mobile-menu-contacts-link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="menu-social-links">
+              <ul class="menu-social-links-list">
+                <li class="social-list-icon">
+                  <a href="" class="social-link">
+                    <svg class="social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-icon">
+                  <a href="" class="social-link">
+                    <svg class="social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-icon">
+                  <a href="" class="social-link">
+                    <svg class="social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-icon">
+                  <a href="" class="social-link">
+                    <svg class="social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -73,19 +134,19 @@
 
     <!--main content-->
     <main>
-      <section class="section-solutions hidden">
+      <section class="section-solutions">
         <div class="container">
           <h1 class="head-section-solutions">
             Effective Solutions for Your Business
           </h1>
-          <button class="button-order-service" type="button">
+          <button class="button-order-service" type="button" data-modal-open>
             Order Service
           </button>
         </div>
       </section>
 
       <!--section with list of benefits-->
-      <section class="head-section-benefits hidden">
+      <section class="head-section-benefits">
         <div class="container">
           <h2 class="visually-hidden">Our Benefits</h2>
           <ul class="benefits-list">
@@ -142,7 +203,7 @@
       </section>
 
       <!--section team-->
-      <section class="section-team hidden">
+      <section class="section-team">
         <div class="container">
           <h2 class="head-section-team">Our Team</h2>
           <ul class="list-section-team">
@@ -447,6 +508,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer hidden">
       <div class="container container-footer-all">
         <div class="container-footer-logo">
@@ -512,9 +574,9 @@
       </div>
     </footer>
 
-    <div class="backdrop hidden">
+    <div class="backdrop hidden" data-modal>
       <div class="modal">
-        <button class="close-modal-btn" type="button">
+        <button class="close-modal-btn" type="button" data-modal-close>
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -597,5 +659,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
